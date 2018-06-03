@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Header*/
+#header-container{
+  background-image: url("../images/background.png");
+  height: 600px;
+  max-height: 100%;
+  background-size: cover;
+}
+#header-container.precios-contenedor{
+  height: auto;
+}
+
+#header-container img{
+  width: 200px;
+}
+
+#header-container .navbar-toggler.navbar-toggler-right{
+  color: white;
+}
+
+
+#header-container nav ul li{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+#header-container .nav-link{
+  color: white;
+}
+
+#header-container .nav-link:hover{
+  color: #014c8c;
+}
+
+#header-container  .jumbotron{
+  background-color: inherit;
+}
+
+#header-container  .jumbotron .display-3, p{
+  color:white;
+  font-weight: bold;
+}
+
+#header-container .jumbotron .display-3 span{
+  text-decoration: underline;
+}
+
+#header-container hr{
+  border-top: 1px solid rgba(255,255,255,.3)
+}
+
+#header-container .btn-primary{
+  background: linear-gradient(to left,#fe344e, #ff7250);
+  border: none;
+  font-weight: bold;
+}
+
+#header-container .btn-primary:hover{
+  box-shadow: 5px 5px 10px 3px #333;
+}
+/*Header*/
+
+/*Guitarras*/
+#guitarras-container{
+  margin-top: 2em;
+}
+
+#guitarras-container .display-3{
+  text-align: center;
+  color: #1f313c;
+}
+
+#guitarras-container .col1{
+  margin-left: auto;
+}
+#guitarras-container .col2{
+  margin-right: auto;
+}
+
+#guitarras-container .col1, .col2{
+  margin-top: 5em;
+  border: 2px solid #1f313c;
+  padding: 4em;
+  border-radius: 10px;
+}
+
+#guitarras-container h1{
+  margin-bottom: 20px;
+}
+
+#guitarras-container p{
+  font-size: 18px;
+  color: #1f313c;
+}
+
+#guitarras-container ul{
+  text-decoration: none;
+}
+
+#guitarras-container .acustica{
+  position: absolute;
+  top: -114px;
+  width: 450px;
+  left: 400px;
+  height: auto;
+}
+
+#guitarras-container .classic{
+  position: absolute;
+  width: 500px;
+  bottom: -100px;
+  left: -60px;
+  height: auto;
+}
+/*Guitarras*/
+
+/*footer*/
+#footer-container{
+  background: #273b47;
+  margin-top: 6em;
+  padding: 2em;
+}
+#footer-container .contacto{
+  margin-top: 1em;
+}
+
+#footer-container a{
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+#footer-container strong{
+  padding-right: 10px;
+}
+#footer-container label{
+  color: white;
+}
+#footer-container .sexo{
+  margin-bottom: 20px;
+}
+#footer-container .hombre{
+  margin-right: 50px;
+}
+
+#footer-container .asunto{
+  text-align: center;
+}
+
+#footer-container .btn-primary{
+  margin-top: 1em;
+  background: linear-gradient(to left,#fe344e, #ff7250);
+  border: none;
+  font-size: 20px;
+}
+#footer-container .btn-primary:hover{
+  box-shadow: 5px 5px 10px 3px #333;
+}
+/*footer*/
+
+
+/*Visitanos*/
+
+#ubicacion .col-lg-5.texto{
+  padding: 15px;
+  margin-top: 1em;
+}
+#ubicacion .mapa{
+  margin-top: 1em;
+}
+
+#ubicacion iframe{
+  height: 100%;
+  width: 100%;
+}
+
+
+/*Visitanos*/
+
+@media (max-width:1024px) {
+  /*Guitarras*/
+  #guitarras-container .col1{
+    margin-left: 0;
+  }
+  #guitarras-container .col2{
+    margin-right: 0;
+  }
+  #guitarras-container .acustica{
+    left: 305px;;
+  }
+
+  #guitarras-container .classic{
+    left: -130px;
+    bottom: -80px
+  }
+
+  #guitarras-container .col1{
+    padding-left: 15px;
+  }
+
+  #guitarras-container .col2{
+    padding-right: 15px;
+  }
+
+  /*Guitarras*/
+
+@media (max-width:768px) {
+  /*Header*/
+  #header-container ul{
+    margin-top: 2em;
+  }
+  #header-container .navbar-toggler.navbar-toggler-right{
+    margin-top: 1em;
+  }
+
+  #header-container  .jumbotron .display-3{
+    font-size: 2.5rem;
+  }
+  /*Header*/
+
+
+  /*Guitarras*/
+  #guitarras-container .acustica{
+    position: static;
+    margin: 0 auto;
+  }
+  #guitarras-container .col1, .col2{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #guitarras-container .pull-right{
+    float: none;
+  }
+  #guitarras-container .acustica{
+    width: 250px;
+    height: auto;
+    float: none;
+    position: static;
+  }
+
+  #guitarras-container .classic{
+    position: static;
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*Guitarras*/
+
+  /*footer*/
+  #footer-container .form-check-input{
+    transform: scale(1.5);
+  }
+  /*footer*/
+}
